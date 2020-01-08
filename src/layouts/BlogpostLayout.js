@@ -16,13 +16,15 @@ const BlogpostLayout = ({data}) => {
                 keywords={post.categories.map(res => res.name).join(', ')}
             />
             <Header></Header>
-            <div className="container">
-                <div className="row justify-content-md-center col-8">
-                    <img alt={post.title} src={post.featured_media.source_url}/>
-                    <h1>{post.title}</h1>
-                    <div dangerouslySetInnerHTML={{__html: post.content}} />
+            <main>
+                <div className="container">
+                    <div className="row justify-content-md-center col-8">
+                        <img alt={post.title} src={post.featured_media.source_url}/>
+                        <h1>{post.title}</h1>
+                        <div dangerouslySetInnerHTML={{__html: post.content}} />
+                    </div>
                 </div>
-            </div>
+            </main>
             <Footer></Footer>
         </div>
     )
