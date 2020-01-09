@@ -19,7 +19,7 @@ const BlogpostLayout = ({data}) => {
             <main>
                 <div className="container">
                     <div className="row justify-content-md-center col-8">
-                        <img alt={post.title} src={post.featured_media.source_url}/>
+                        <img alt={post.featured_media.slug} src={post.featured_media.source_url}/>
                         <h1>{post.title}</h1>
                         <div dangerouslySetInnerHTML={{__html: post.content}} />
                     </div>
@@ -39,6 +39,7 @@ export const query = graphql `
             content
             featured_media {
                 source_url
+                slug
               }
               categories {
                 name

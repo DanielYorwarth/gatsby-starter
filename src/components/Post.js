@@ -5,7 +5,7 @@ const Post = (props) => (
     <artical>
         <div className="p-3">
             <Card>
-                <Card.Img alt={props.alt || "default"} variant="top" src={props.image} />
+                <Card.Img alt={props.alt} variant="top" src={props.image} />
                 <Card.Body>
                     <Card.Title dangerouslySetInnerHTML={{__html: props.title}} />
                     <Card.text>
