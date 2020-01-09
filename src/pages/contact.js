@@ -3,7 +3,7 @@ import PrimaryLayout from '../layouts/PrimaryLayout'
 import {Form, Button} from 'react-bootstrap'
 
 export default () => (
-    <PrimaryLayout column="col-10">
+    <PrimaryLayout column="col-">
         <div className="pt-5">
             <h1>Contact us</h1>
             <Form>
